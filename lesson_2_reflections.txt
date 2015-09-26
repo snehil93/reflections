@@ -1,0 +1,10 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When i initialize a repository i need to type git init in the directory i want to create my repository in. It will give me the message that a git repository has been initialised 
+at the current directory. Then typing git status will show me the number of files in my directory as untracked as well as tell me initial commit and on branch master.
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is the intermediate stage provided by git wher u can put your files which you want to commit before making the actual commit. 
+It is valuable as it allows us to make a choice as to which files in the repository we want to be tracked by git and which ones we want to keep out. 
