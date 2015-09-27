@@ -8,3 +8,15 @@ How is the staging area different from the working directory and the repository?
 
 Staging area is the intermediate stage provided by git wher u can put your files which you want to commit before making the actual commit. 
 It is valuable as it allows us to make a choice as to which files in the repository we want to be tracked by git and which ones we want to keep out. 
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+I can place the file in which i made the logical change in the staging area and make the commit giving an apropriate commit message.
+then i can make a seperate commit for a different logical change 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+
+Branches are helpful when i want to implement some new sometimes experimental feature in my project whose pregress is to be tracked parallely but seperately wrt my main project
+in such situations branches can be useful.
