@@ -27,3 +27,20 @@ How do the diagrams help you visualize the branch structure?
 
 Diagrams help in better understanding the structure of my git repository after the introduction of branches. It also drives home the concepts of reachability and 
 detached head. 
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+
+Merging two branches together merges the changes in code tha were introduced by the two branches ogether and makes it one single branch.
+We represent it that way cos the branches diverge as they differ in there backdrop and when they are merged the two lines are joined.
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+
+
+The pros are automatic merging are we do not need to check the changes made by both the branches that would be tedious
+Cons are sometime when there are changes made on a common piece of code then git is not entirely sure which change to keep int the merged commit. this causes a conflict
+and the author has to look into the conflict and resolve it manually.
