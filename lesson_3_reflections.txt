@@ -21,3 +21,14 @@ Clones: It is a clone of a users' repository located anywhere online or offline 
 
 Branches: In some cases when i am a clolaborator or coworker. I have the permission to modify someone's repository. I may do so by creating a new branch which follows a 
 	  a different worlflow but builds on the authors original code say on the master branch.	
+
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+
+A local copy of the state of the remote is stored locally as origin/master. This is helpful beacuse if we are offline at work (locally) we can still make commits whic are ahead of the origin/master.
+Later when we are connected we can sync the changes by pushing them to github. This updates the orogin/master i.e the state of the remote.
+Another benefit is if i am workng locally and one of my collaborators decides to make a change on git hub and commit it. My remote gets changed. I can then update my remote using git fetch which 
+creates a new branch locally which is different from my master branch. This we can merge together with the origin/master. The same thing is done if just issue the command git pull
+on my remote repository.
