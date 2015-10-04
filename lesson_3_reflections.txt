@@ -24,16 +24,17 @@ Branches: In some cases when i am a clolaborator or coworker. I have the permiss
 
 
 
-What is the benefit of having a copy of the last known state of the remote stored locally?
 
 
-A local copy of the state of the remote is stored locally as origin/master. This is helpful beacuse if we are offline at work (locally) we can still make commits whic are ahead of the origin/master.
-Later when we are connected we can sync the changes by pushing them to github. This updates the orogin/master i.e the state of the remote.
-Another benefit is if i am workng locally and one of my collaborators decides to make a change on git hub and commit it. My remote gets changed. I can then update my remote using git fetch which 
-creates a new branch locally which is different from my master branch. This we can merge together with the origin/master. The same thing is done if just issue the command git pull
-on my remote repository.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
 
 
+The workflow while working on a different branch is different than working directly on the master.
+Say i am a collaborator who is not allowed to make changes directly on the master branch. I have to regukary pull master on my local repo. Make my changes in the different branch
+Push different branch onto github and make a pull request so that the leader might look into my feature and decide if he wants that in the master. He may ask me to merge master
+on my branch locally and see if it works. So i can do that and review if it is ready to be merged with the master. And then make the merge commit and push the changes back to github
+this would update my pull request. and if the leader chooses so he migh implement my change by meging my barach to the master.  
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
@@ -41,3 +42,15 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 
 I can collaborate with someone on a project by staying together with him. 
 It will be a lot more difficult though.
+
+
+
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+
+A local copy of the state of the remote is stored locally as origin/master. This is helpful beacuse if we are offline at work (locally) we can still make commits whic are ahead of the origin/master.
+Later when we are connected we can sync the changes by pushing them to github. This updates the orogin/master i.e the state of the remote.
+Another benefit is if i am workng locally and one of my collaborators decides to make a change on git hub and commit it. My remote gets changed. I can then update my remote using git fetch which 
+creates a new branch locally which is different from my master branch. This we can merge together with the origin/master. The same thing is done if just issue the command git pull
+on my remote repository. 
