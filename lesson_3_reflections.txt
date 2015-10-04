@@ -32,3 +32,12 @@ Later when we are connected we can sync the changes by pushing them to github. T
 Another benefit is if i am workng locally and one of my collaborators decides to make a change on git hub and commit it. My remote gets changed. I can then update my remote using git fetch which 
 creates a new branch locally which is different from my master branch. This we can merge together with the origin/master. The same thing is done if just issue the command git pull
 on my remote repository.
+
+
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+
+
+I can collaborate with someone on a project by staying together with him. 
+It will be a lot more difficult though.
